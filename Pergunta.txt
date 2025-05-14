@@ -1,0 +1,13 @@
+Explique com suas palavras o funcionamento do models, controllers e fale sobre endpoints no projeto:
+
+- Os models nesse projeto impletam as funções que serão executadas no banco de dados. Como por exemplo, no models de cursos
+ele contém varias funções que são chamadas pelo contorllers de cursos, funções como adicionar, deletar,
+editar e até mostrar todos os dados presentes, assim sendo responsável por se comunicar com o banco de dados.
+
+- Os controllers recebem as requisições dos usuarios, chamando os models quando necessários para execuções de tarefas
+que envolvam o banco de dados. Nesse projeto vemos essa aplicação por meio do controllers do cursos, onde após receber 
+o id do curso ele executa a função selecionada como a de criar, definido como "store" que chama o models do curso executando
+apenas a função "create", e assim retornando o valor de volta ao HTTP.
+
+- Já os endpoints servem para os usuarios se comunicarem com os servidores, de maneira a usar a URL para essa comunicação
+através por exemplo das rotas "http://localhost:3000/aluno" que direciona ele para uma aba apenas com comandos para os alunos.
