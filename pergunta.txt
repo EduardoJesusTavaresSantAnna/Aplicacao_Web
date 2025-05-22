@@ -12,3 +12,37 @@ apenas a função "create", e assim retornando o valor de volta ao HTTP.
 
 - Já os endpoints servem para os usuarios se comunicarem com os servidores, de maneira a usar a URL para essa comunicação
 através por exemplo das rotas "http://localhost:3000/aluno" que direciona ele para uma aba apenas com comandos para os alunos.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Explique com suas palavras o papel de cada camada da arquitetura MVC usada neste projeto.
+Como o Model, o Controller e a View interagem entre si?
+
+Respostas:
+
+A arquitetura MVC funciona como uma divisão de tarefas dentro da sua aplicação, onde cada parte tem um papel bem definido, 
+e todas trabalham juntas para que tudo funcione de forma organizada:
+
+O model é a parte do sistema que fala com o banco de dados. Ele sabe como buscar, salvar, atualizar ou deletar informações.
+Por exemplo, quando queremos ver todos os alunos com seus cursos, é o Model que monta a consulta SQL e retorna os dados para
+o resto do sistema. O Controller é quem recebe as ações do usuário. Ele entende o que a pessoa está pedindo (como acessar a lista de alunos
+ou cadastrar um novo) e sabe qual Model chamar. Depois que o Controller recebe os dados do Model, ele decide o que fazer com 
+eles — normalmente, envia esses dados para a View. Que é a parte que o usuário vê. Ela monta o HTML com os dados que o Controller 
+passou e mostra tudo de forma bonita na tela, como tabelas, formulários, listas etc.
+
+
+
+Como ocorre o envio e o recebimento de dados no formato JSON neste projeto?
+Cite uma rota que responde em JSON e explique seu funcionamento.
+
+Resposta: No seu projeto, o envio e recebimento de dados em JSON acontece quando o servidor responde a uma requisição usando res.json(). 
+Isso geralmente é usado quando a resposta não precisa ser uma página HTML, mas sim dados puros — como em APIs ou requisições assíncronas 
+feitas com JavaScript (AJAX, fetch, etc.).
+
+
+
+Qual a importância de usar HTML básico com formulários e tabelas para organizar e manipular dados no navegador?
+Por que esse tipo de estrutura ainda é útil em projetos back-end com Node.js?
+
+Respostas: HTML com formulários e tabelas é útil para organizar e manipular dados de forma simples no navegador. Em projetos back-end com 
+Node.js, essa estrutura facilita a interação com o servidor, permite prototipação rápida e torna o sistema mais leve e fácil de manter.
