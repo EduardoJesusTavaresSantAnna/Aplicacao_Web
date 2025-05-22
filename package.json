@@ -20,5 +20,19 @@
     "jest": "^27.0.6",
     "nodemon": "^2.0.22",
     "supertest": "^6.1.3"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoJesusTavaresSantAnna/Aplicacao_Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduardoJesusTavaresSantAnna/Aplicacao_Web/issues"
+  },
+  "homepage": "https://github.com/EduardoJesusTavaresSantAnna/Aplicacao_Web#readme"
 }

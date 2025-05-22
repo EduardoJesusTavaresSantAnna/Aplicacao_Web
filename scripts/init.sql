@@ -2,8 +2,11 @@ CREATE TABLE IF NOT EXISTS aluno (
   id SERIAL PRIMARY KEY,
   nome TEXT NOT NULL,
   email TEXT NOT NULL,
-  criado_em TIMESTAMP DEFAULT NOW()
+  criado_em TIMESTAMP DEFAULT NOW(),
+  curso_id INTEGER,
+  FOREIGN KEY (curso_id) REFERENCES curso(id) ON DELETE SET NULL
 );
+
 
 CREATE INDEX IF NOT EXISTS idx_aluno_email ON aluno (email);
 
